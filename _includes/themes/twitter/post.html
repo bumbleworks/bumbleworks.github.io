@@ -7,6 +7,14 @@
     <div class="date">
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
+    <div class="byline">
+      <span>
+        {{ page.author.name }}
+        <a href='mailto:{{ page.author.email }}'><i class="icon-envelope"></i></a>
+        {% if page.author.twitter %}<a href='http://twitter.com/{{ page.author.twitter }}'><i class="icon-twitter"></i></a>{% endif %}
+        {% if page.author.github %}<a href='http://github.com/{{ page.author.github }}'><i class="icon-github"></i></a>{% endif %}
+      </span>
+    </div>
     <div class="content">
       {{ content }}
     </div>
