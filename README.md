@@ -1,4 +1,4 @@
-# Jekyll-Bootstrap
+# The Bumbleworks Blog
 
 To post to the blog:
 
